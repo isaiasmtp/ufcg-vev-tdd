@@ -6,4 +6,5 @@
  *
  */
 module invoiceFilter {
+	requires junit;
 }
