@@ -4,6 +4,7 @@ public class Invoice {
 	private String id;
 	private double amount;
 	private String date;
+	private Client client;
 
 
 	public String getId() {
@@ -19,11 +20,16 @@ public class Invoice {
 	public String getDate() {
 		return date;
 	}
+	
+	public Client getClient() {
+		return client;
+	}
 
 
-	public Invoice(String id, double amount, String date) {
+	public Invoice(String id, double amount, String date, Client client) {
 		this.id = id;
 		this.amount = amount;
 		this.date = date;
+		this.client = client;
 	}
 }
