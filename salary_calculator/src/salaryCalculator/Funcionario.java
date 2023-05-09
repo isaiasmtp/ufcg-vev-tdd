@@ -1,4 +1,4 @@
-package invoiceFilter;
+package salaryCalculator;
 
 public class Funcionario {
 	
@@ -20,5 +20,13 @@ public class Funcionario {
     
     public String getCargo() {
         return cargo;
+    }
+
+    public void setSalarioBase(double salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
 }

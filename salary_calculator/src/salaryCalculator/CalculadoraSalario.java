@@ -1,5 +1,5 @@
 
-package invoiceFilter;
+package salaryCalculator;
 
 public class CalculadoraSalario {
     public double calcularSalarioLiquido(Funcionario funcionario) {

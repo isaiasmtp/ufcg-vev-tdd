@@ -1,10 +1,10 @@
-package invoiceFilter;
+package salaryCalculator;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class FuncionarioTeste {
+public class FuncionarioTest {
 
 	@Test
     public void testGetSalarioBase() {

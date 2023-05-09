@@ -1,4 +1,4 @@
-package invoiceFilter;
+package salaryCalculator;
 
 import static org.junit.Assert.*;
 
