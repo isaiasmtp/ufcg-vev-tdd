@@ -1,8 +1,11 @@
-package invoiceFilter;
+package tests;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import invoiceFilter.Client;
+import invoiceFilter.Invoice;
 
 public class InvoiceTest {
 

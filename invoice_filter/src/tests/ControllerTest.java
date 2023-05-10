@@ -1,4 +1,4 @@
-package invoiceFilter;
+package tests;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import static java.util.Calendar.MONTH;
 
 import org.junit.Test;
+
+import invoiceFilter.Client;
+import invoiceFilter.Controller;
+import invoiceFilter.Invoice;
 
 public class ControllerTest {
 
