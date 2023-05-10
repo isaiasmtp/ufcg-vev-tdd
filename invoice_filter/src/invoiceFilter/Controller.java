@@ -16,13 +16,13 @@ public class Controller {
 		this.invoices = invoices;
 	}
 	
-	static boolean isBeforeMonths(int months, Date aDate) {
+	public static boolean isBeforeMonths(int months, Date aDate) {
 	    Calendar calendar = Calendar.getInstance();
 	    calendar.add(MONTH, months);
 	    return aDate.compareTo(calendar.getTime()) < 0;
 	  }
 	
-	boolean checkDate(int month, String date) {
+	public boolean checkDate(int month, String date) {
 		try {
 			return isBeforeMonths(month, sdf.parse(date));
 		} catch (ParseException e) {
@@ -32,14 +32,14 @@ public class Controller {
 	}
 
 
-	boolean checkSouthState(String state) {
+	public boolean checkSouthState(String state) {
 		boolean check_state = state.equals("PR") || state.equals("RS") || state.equals("SC"); 
 		return check_state;
 		
 	}
 	
 	
-	boolean checkInvoice(Invoice invoice) {
+	public boolean checkInvoice(Invoice invoice) {
 		boolean check_amount = invoice.getAmount() < 2000;
 
 		boolean check_amount_date = invoice.getAmount() >= 2000 
